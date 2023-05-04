@@ -1,0 +1,112 @@
+.header {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 15vh;
+  border: 1px solid #ccc;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.header .leftHeader {
+  width: 35%;
+}
+.header .rightHeader {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 35%;
+}
+.header .rightHeader .facebook, .header .rightHeader .twitter, .header .rightHeader .instagram {
+  font-size: 2em;
+}
+.header h1 {
+  font-size: 5vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  width: 80%;
+  height: 30vh;
+  margin: 3vh;
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+.card .cardFrame {
+  width: 35%;
+}
+.card .cardFrame img {
+  border-radius: 4px 0px 0px 4px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .cardText {
+  width: 50%;
+  padding: 1.1rem;
+}
+.card .cardText h2 {
+  margin: 0;
+  font-size: 2.4vh;
+  font-weight: bold;
+  color: #333;
+  overflow: hidden;
+}
+.card .cardText p {
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.article {
+  max-width: 70%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 5vh;
+  padding: 10vh;
+}
+.article img {
+  border-radius: 4px 0px 0px 4px;
+  width: 80%;
+}
+.article h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.article img {
+  display: block;
+  width: 80%;
+  max-height: 100%;
+  border-radius: 5px;
+  margin: 1rem auto;
+}
+.article .articleContent {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+.article .articleContent p {
+  max-width: 100%;
+  margin: 1rem;
+}/*# sourceMappingURL=App.css.map */

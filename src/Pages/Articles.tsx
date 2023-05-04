@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-
 interface Article {
   title: string;
   description: string;
@@ -40,7 +39,6 @@ export const Articles = () => {
   }, []);
 
   return (
-    
     <div className="App">
       <h1>Articles</h1>
 
@@ -52,27 +50,20 @@ export const Articles = () => {
       />
 
       {filteredArticles.map((article) => (
-
-
-      
-        <div key={article.url} className="card">
-
-          <Link to={`/article/${article.url}` }>
-
+        <Link
+          to={`/article/${article.title}`}
+          className="card"
+          style={{ textDecoration: "none" }}
+        >
           <div className="cardFrame">
-            <img src={article.urlToImage}alt={article.title}className="article-image"
-            />
+            <img src={article.urlToImage} alt={article.title} />
           </div>
 
           <div className="cardText">
             <h2>{article.title}</h2>
             <p>{new Date(article.publishedAt).toLocaleString()}</p>
           </div>
-
-          </Link>
-
-        </div>
-        
+        </Link>
       ))}
     </div>
   );
